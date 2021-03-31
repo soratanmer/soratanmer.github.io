@@ -89,7 +89,11 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -168,7 +172,7 @@
     <img class="site-author-image" itemprop="image" alt="藤澤空太"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">藤澤空太</p>
-  <div class="site-description" itemprop="description">空太は中国科学院大学に合格しましたか？</div>
+  <div class="site-description" itemprop="description">空太考上国科大了嘛？</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -246,7 +250,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="藤澤空太">
-      <meta itemprop="description" content="空太は中国科学院大学に合格しましたか？">
+      <meta itemprop="description" content="空太考上国科大了嘛？">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -371,6 +375,39 @@
   
 
 
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
 
 
 

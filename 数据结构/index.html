@@ -64,7 +64,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20181105100214250.gif">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20181107200837443.jpg">
 <meta property="article:published_time" content="2021-03-30T15:32:02.000Z">
-<meta property="article:modified_time" content="2021-03-30T17:01:24.905Z">
+<meta property="article:modified_time" content="2021-03-31T00:00:58.229Z">
 <meta property="article:author" content="藤澤空太">
 <meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
@@ -124,7 +124,11 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -203,7 +207,7 @@
     <img class="site-author-image" itemprop="image" alt="藤澤空太"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">藤澤空太</p>
-  <div class="site-description" itemprop="description">空太は中国科学院大学に合格しましたか？</div>
+  <div class="site-description" itemprop="description">空太考上国科大了嘛？</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -281,7 +285,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
       <meta itemprop="name" content="藤澤空太">
-      <meta itemprop="description" content="空太は中国科学院大学に合格しましたか？">
+      <meta itemprop="description" content="空太考上国科大了嘛？">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -301,7 +305,7 @@
       <span class="post-meta-item-text">投稿日</span>
       
 
-      <time title="作成日：2021-03-31 00:32:02 / 修正日：02:01:24" itemprop="dateCreated datePublished" datetime="2021-03-31T00:32:02+09:00">2021-03-31</time>
+      <time title="作成日：2021-03-31 00:32:02 / 修正日：09:00:58" itemprop="dateCreated datePublished" datetime="2021-03-31T00:32:02+09:00">2021-03-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -364,10 +368,8 @@
 </li>
 <li><p>$&gt;0$ 的输出</p>
 </li>
-<li><p>一定在有限步骤之后终止</p>
-</li>
-<li><p>每一条指令必须</p>
-<ul>
+<li>一定在有限步骤之后终止</li>
+<li>每一条指令必须<ul>
 <li>有充分明确的目标，不可以有歧义</li>
 <li>计算机能处理范围内</li>
 <li>描述应不依赖于任何一种计算机语言以及具体的实现手段</li>
@@ -390,8 +392,8 @@
 <li><p>平均情况复杂度$T_{avg}(n)$</p>
 </li>
 </ul>
-<p>$$<br>T_{avg}(n) \leq T_{worst}(n)<br>$$</p>
-<p>一般情况下更多关注的是最坏情况复杂度</p>
+<script type="math/tex; mode=display">
+T_{avg}(n) \leq T_{worst}(n)</script><p>一般情况下更多关注的是最坏情况复杂度</p>
 <h4 id="复杂度的渐进表示法"><a href="#复杂度的渐进表示法" class="headerlink" title="复杂度的渐进表示法"></a>复杂度的渐进表示法</h4><ul>
 <li>$T(n)=O(f(n))$ 表示存在常数 $C&gt;0$ ， $n_0&gt;0$ 使得当 $n \ge n_0$ 时有 $T(n) \le C \cdot  f(n)$，即$O(f(n))$表示$f(n)$是$T(n)$的某种上界</li>
 <li>$T(n)= \Omega (g(n))$ 表示存在常数 $C&gt;0$ ， $n_0&gt;0$ 使得当 $n \ge n_0$ 时有 $T(n) \ge C \cdot g(n)$，即$\Omega (g(n))$表示$g(n)$是$T(n)$的某种下界</li>
@@ -595,7 +597,7 @@
 </ol>
 <p>例如：</p>
 <p>前序：<code>ABCDEFG</code><br>中序：<code>CBDAFEG</code></p>
-<p>先序遍历为”根左右”，则<code>A</code>是根，对应可以划分出中序中：<code>(CBD)A(FEG)</code>，<code>CBD</code>为左子树，<code>FEG</code>为右子树，再根据前序的<code>BCD</code>，<code>B</code>为根，划分出中序中<code>(C(B)D)A(FEG)</code>，则<code>C</code> <code>D </code>分别是<code>B</code>的左右子树…最后可得树为：</p>
+<p>先序遍历为”根左右”，则<code>A</code>是根，对应可以划分出中序中：<code>(CBD)A(FEG)</code>，<code>CBD</code>为左子树，<code>FEG</code>为右子树，再根据前序的<code>BCD</code>，<code>B</code>为根，划分出中序中<code>(C(B)D)A(FEG)</code>，则<code>C</code> <code>D</code>分别是<code>B</code>的左右子树…最后可得树为：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">    A</span><br><span class="line">   &#x2F;  \</span><br><span class="line">  B    E</span><br><span class="line"> &#x2F; \  &#x2F; \</span><br><span class="line">C   D F  G</span><br></pre></td></tr></table></figure>
 <h3 id="二叉搜索树"><a href="#二叉搜索树" class="headerlink" title="二叉搜索树"></a>二叉搜索树</h3><h4 id="定义-2"><a href="#定义-2" class="headerlink" title="定义"></a>定义</h4><p> 二叉搜索树<code>BST</code>也称二叉排序树或二叉查找树</p>
 <p>二叉搜索树：一棵二叉树，可以为空；如果不为空，满足以下性质：</p>
@@ -654,14 +656,14 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">AVLTree <span class="title">LLRotation</span><span class="params">(AVLTree A)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 此时根节点是 A</span></span><br><span class="line">  AVLTree B = A-&gt;left; <span class="comment">// B 为 A 的左子树</span></span><br><span class="line">  A-&gt;left = B-&gt;right;  <span class="comment">// B 的右子树挂在 A 的左子树上</span></span><br><span class="line">  B-&gt;right = A;        <span class="comment">//  A 挂在 B 的右子树上</span></span><br><span class="line">  <span class="keyword">return</span> B;            <span class="comment">// 此时 B 为根结点了</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h5 id="LR双旋"><a href="#LR双旋" class="headerlink" title="LR双旋"></a><code>LR</code>双旋</h5><p>当”插入结点”<code>CL</code>或者<code>CR</code>是”被破坏平衡结点”<code>A</code><strong>左子树</strong>的<strong>右子树</strong>时，即<code>LR</code>插入，采用<code>LR</code>旋转调整</p>
 <p><img src="https://img-blog.csdnimg.cn/20181102112415831.jpg" alt="img"></p>
-<p>基本思想是先将<code>B</code>作为根结点进行**<code>RR</code>单旋<strong>转化为<code>LL</code>插入，再将<code>A</code>作为根结点进行</strong><code>LL</code>单旋**（先<code>RR</code>再<code>LL</code>）</p>
+<p>基本思想是先将<code>B</code>作为根结点进行<strong><code>RR</code>单旋</strong>转化为<code>LL</code>插入，再将<code>A</code>作为根结点进行<strong><code>LL</code>单旋</strong>（先<code>RR</code>再<code>LL</code>）</p>
 <p>示意图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20181102115543530.jpg" alt="img"></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">AVLTree <span class="title">LRRotation</span><span class="params">(AVLTree A)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 先 RR 单旋</span></span><br><span class="line">  A-&gt;left = RRRotation(A-&gt;left);</span><br><span class="line">  <span class="comment">// 再 LL 单旋</span></span><br><span class="line">  <span class="keyword">return</span> LLRotation(A);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>总结：叫<code>LR</code>双旋是从上到下看，而实际先<code>RR</code>单旋再<code>LL</code>单旋是从下往上的过程</p>
 <h5 id="RL双旋"><a href="#RL双旋" class="headerlink" title="RL双旋"></a><code>RL</code>双旋</h5><p>当”插入结点”<code>CL</code>或者<code>CR</code>是”被破坏平衡结点”<code>A</code><strong>右子树</strong>的<strong>左子树</strong>时，即<code>R</code> 插入，采用<code>RL</code>旋转调整</p>
 <p><img src="https://img-blog.csdnimg.cn/20181102112435166.jpg" alt="img"></p>
-<p>基本思想是先将<code>B</code>作为根结点进行**<code>LL</code>单旋<strong>转化为<code>RR</code>插入，再将<code>A</code>作为根结点进行</strong><code>RR</code>单旋**（先<code>LL</code>再<code>RR</code>）</p>
+<p>基本思想是先将<code>B</code>作为根结点进行<strong><code>LL</code>单旋</strong>转化为<code>RR</code>插入，再将<code>A</code>作为根结点进行<strong><code>RR</code>单旋</strong>（先<code>LL</code>再<code>RR</code>）</p>
 <p>示意图：</p>
 <p><img src="https://img-blog.csdnimg.cn/20181102115827971.jpg" alt="img"></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">AVLTree <span class="title">RLRotation</span><span class="params">(AVLTree A)</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 先 LL 单旋</span></span><br><span class="line">  A-&gt;right = LLRotation(A-&gt;right);</span><br><span class="line">  <span class="comment">// 再 RR 单旋</span></span><br><span class="line">  <span class="keyword">return</span> RRRotation(A);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -699,7 +701,9 @@
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MinData = <span class="number">-100000</span>; <span class="comment">// 哨兵值</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MaxSize = <span class="number">1005</span>;    <span class="comment">// 最大个数</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">HeapStruct</span> *<span class="title">Heap</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">HeapStruct</span> &#123;</span></span><br><span class="line">  <span class="keyword">int</span> *data;    <span class="comment">// 存值的数组</span></span><br><span class="line">  <span class="keyword">int</span> size;     <span class="comment">// 当前元素个数</span></span><br><span class="line">  <span class="keyword">int</span> capacity; <span class="comment">// 最大容量</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 初始化堆</span></span><br><span class="line"><span class="function">Heap <span class="title">Create</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Heap H;</span><br><span class="line">  H = (Heap)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(struct HeapStruct));</span><br><span class="line">  H-&gt;data = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * (MaxSize + <span class="number">1</span>));</span><br><span class="line">  H-&gt;size = <span class="number">0</span>;</span><br><span class="line">  H-&gt;capacity = MaxSize;</span><br><span class="line">  H-&gt;data[<span class="number">0</span>] = MinData;</span><br><span class="line">  <span class="keyword">return</span> H;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 插入</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(Heap H, <span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i = ++H-&gt;size; <span class="comment">// 指向数组最后一个</span></span><br><span class="line">  <span class="keyword">for</span> (; H-&gt;data[i / <span class="number">2</span>] &gt; x; i /= <span class="number">2</span>)</span><br><span class="line">    H-&gt;data[i] = H-&gt;data[i / <span class="number">2</span>];</span><br><span class="line">  H-&gt;data[i] = x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bl</span><span class="params">(Heap H)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= H-&gt;size; i++)</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; H-&gt;data[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Heap H;</span><br><span class="line">  H = Create();</span><br><span class="line">  <span class="keyword">int</span> n;</span><br><span class="line">  <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">    <span class="keyword">int</span> t;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; t;</span><br><span class="line">    Insert(H, t);</span><br><span class="line">  &#125;</span><br><span class="line">  bl(H);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h6 id="调整建堆"><a href="#调整建堆" class="headerlink" title="调整建堆"></a>调整建堆</h6><p>将 $N$ 个元素直接按顺序存入，再调整各结点的位置（简单说来，对于从最后一个有孩子结点的结点来说，其本身结点和孩子结点共同构成”子最小堆”，借助前面删除的想法，对每个”子最小堆”排序，当排序完成，整个最小堆也建立成功），时间代价是 $O(n)$</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;malloc.h&gt;</span></span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MinData = <span class="number">-100000</span>; <span class="comment">// 哨兵值</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MaxSize = <span class="number">1005</span>;    <span class="comment">// 最大个数</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">HeapStruct</span> *<span class="title">Heap</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">HeapStruct</span> &#123;</span></span><br><span class="line">  <span class="keyword">int</span> *data;    <span class="comment">// 存值的数组</span></span><br><span class="line">  <span class="keyword">int</span> size;     <span class="comment">// 当前元素个数</span></span><br><span class="line">  <span class="keyword">int</span> capacity; <span class="comment">// 最大容量</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 初始化堆</span></span><br><span class="line"><span class="function">Heap <span class="title">Create</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Heap H;</span><br><span class="line">  H = (Heap)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(struct HeapStruct));</span><br><span class="line">  H-&gt;data = (<span class="keyword">int</span> *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">int</span>) * (MaxSize + <span class="number">1</span>));</span><br><span class="line">  H-&gt;size = <span class="number">0</span>;</span><br><span class="line">  H-&gt;capacity = MaxSize;</span><br><span class="line">  H-&gt;data[<span class="number">0</span>] = MinData;</span><br><span class="line">  <span class="keyword">return</span> H;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 排序，类似堆的&quot;删除操作&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">sort</span><span class="params">(Heap H, <span class="keyword">int</span> i)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> child, parent;</span><br><span class="line">  <span class="keyword">int</span> tmp = H-&gt;data[i]; <span class="comment">// 拿到当前&quot;根结点的值&quot;</span></span><br><span class="line">  <span class="keyword">for</span> (parent = i; parent * <span class="number">2</span> &lt;= H-&gt;size; parent = child) &#123;</span><br><span class="line">    child = <span class="number">2</span> * parent;</span><br><span class="line">    <span class="keyword">if</span> ((child != H-&gt;size) &amp;&amp; (H-&gt;data[child + <span class="number">1</span>] &lt; H-&gt;data[child]))</span><br><span class="line">      child++;</span><br><span class="line">    <span class="keyword">if</span> (H-&gt;data[child] &gt;= tmp)</span><br><span class="line">      <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      H-&gt;data[parent] = H-&gt;data[child];</span><br><span class="line">  &#125;</span><br><span class="line">  H-&gt;data[parent] = tmp;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 调整</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">adjust</span><span class="params">(Heap H)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">int</span> i = H-&gt;size / <span class="number">2</span>;</span><br><span class="line">  <span class="keyword">for</span> (; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">    <span class="comment">// 以每个有孩子结点的结点作为根结点，对其子树进行堆排序</span></span><br><span class="line">    sort(H, i);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">bl</span><span class="params">(Heap H)</span> </span>&#123;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= H-&gt;size; i++) &#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; H-&gt;data[i] &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Heap H;</span><br><span class="line">  H = Create();</span><br><span class="line">  <span class="keyword">int</span> n;</span><br><span class="line">  <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; H-&gt;data[++H-&gt;size];</span><br><span class="line">  adjust(H);</span><br><span class="line">  bl(H);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="哈夫曼树"><a href="#哈夫曼树" class="headerlink" title="哈夫曼树"></a>哈夫曼树</h3><h4 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h4><p>**带权路径长度<code>WPL</code>**：设二叉树有 $n$ 个叶子结点，每个叶子结点带有权值 $w_k$，从根结点到每个叶子结点的长度为 $l_k$，则每个叶子结点的带权路径长度之和就是：<br>$$<br>WPL= \sum ^n _{k=1} w_kl_k<br>$$<br>最优二叉树或哈夫曼树：<code>WPL</code>最小的二叉树</p>
+<h3 id="哈夫曼树"><a href="#哈夫曼树" class="headerlink" title="哈夫曼树"></a>哈夫曼树</h3><h4 id="定义-4"><a href="#定义-4" class="headerlink" title="定义"></a>定义</h4><p><strong>带权路径长度<code>WPL</code></strong>：设二叉树有 $n$ 个叶子结点，每个叶子结点带有权值 $w_k$，从根结点到每个叶子结点的长度为 $l_k$，则每个叶子结点的带权路径长度之和就是：</p>
+<script type="math/tex; mode=display">
+WPL= \sum ^n _{k=1} w_kl_k</script><p>最优二叉树或哈夫曼树：<code>WPL</code>最小的二叉树</p>
 <h4 id="哈夫曼树的构造"><a href="#哈夫曼树的构造" class="headerlink" title="哈夫曼树的构造"></a>哈夫曼树的构造</h4><ul>
 <li>每次把权值最小的两颗二叉树合并</li>
 </ul>
@@ -813,6 +817,39 @@
   
 
 
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
 
 
 

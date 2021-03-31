@@ -23,12 +23,12 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"検索…","empty":"検索結果が見つかりませんでした: ${query}","hits_time":"${hits} の結果が ${time} ms で見つかりました","hits":"${hits} 件の結果が見つかりました"}};
   </script>
-<meta name="description" content="空太は中国科学院大学に合格しましたか？">
+<meta name="description" content="空太考上国科大了嘛？">
 <meta property="og:type" content="website">
 <meta property="og:title" content="空太のブログ">
 <meta property="og:url" content="http://example.com/archives/2021/01/index.html">
 <meta property="og:site_name" content="空太のブログ">
-<meta property="og:description" content="空太は中国科学院大学に合格しましたか？">
+<meta property="og:description" content="空太考上国科大了嘛？">
 <meta property="og:locale" content="ja_JP">
 <meta property="article:author" content="藤澤空太">
 <meta name="twitter:card" content="summary">
@@ -87,7 +87,11 @@
   </style>
 </noscript>
 
-</head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -165,7 +169,7 @@
     <img class="site-author-image" itemprop="image" alt="藤澤空太"
       src="/images/avatar.jpg">
   <p class="site-author-name" itemprop="name">藤澤空太</p>
-  <div class="site-description" itemprop="description">空太は中国科学院大学に合格しましたか？</div>
+  <div class="site-description" itemprop="description">空太考上国科大了嘛？</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
@@ -326,6 +330,39 @@
   
 
 
+
+
+  <script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'none'
+      },
+      options: {
+        renderActions: {
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              const target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    const script = document.createElement('script');
+    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
+    script.defer = true;
+    document.head.appendChild(script);
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.typesetClear();
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
 
 
 
